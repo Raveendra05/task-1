@@ -19,7 +19,8 @@ const reducer = (state = initialState , action) =>{
           fielddata:{
             ...state.fieldata , 
             ...action.payload
-          }
+          },
+          // fielddata:action.payload
         };
           default:
             return state;
